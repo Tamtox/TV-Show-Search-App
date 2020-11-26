@@ -18,7 +18,7 @@ main{
 }
 #form{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 10%;
     width: 26%;
@@ -29,9 +29,9 @@ main{
     border-radius: 10px;
 }
 #shows{
-    display: grid;
+    display: none;
     grid-template-columns: repeat(5, 16%);
-    grid-auto-rows: 45%;
+    grid-auto-rows: 60%;
     box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
     height: 88%;
     width: 90%;
@@ -42,23 +42,34 @@ main{
     overflow: scroll;
     scrollbar-width: none;
 }
+#show{
+    display: flex;
+    box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
+    height: 88%;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1% 1% 1% 1%;
+}
 .show-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 20% 80%;
     box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
     border-radius: 5px;
+    background-color: honeydew;
 }
 .show-title {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .show-cover {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 .button{
     border-radius: 10px;
@@ -86,20 +97,40 @@ footer{
     html{
         font-size: 70%;
     }
+    #shows{
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     html{
         font-size: 75%;
+    }
+    #shows{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     html{
         font-size: 80%;
     }
+    #shows{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     html{
         font-size: 85%;
+    }
+    #shows{
+        display: grid;
+        grid-template-columns: repeat(4,21%);
+
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
