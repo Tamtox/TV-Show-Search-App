@@ -31,7 +31,7 @@ main{
 #shows{
     display: none;
     grid-template-columns: repeat(5, 16%);
-    grid-auto-rows: 60%;
+    grid-auto-rows: 70%;
     box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
     height: 88%;
     width: 90%;
@@ -43,7 +43,7 @@ main{
     scrollbar-width: none;
 }
 #show{
-    display: flex;
+    display: none;  
     box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
     height: 88%;
     width: 70%;
@@ -51,10 +51,23 @@ main{
     border-radius: 10px;
     padding: 1% 1% 1% 1%;
 }
+#none{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
+    height: 88%;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1% 1% 1% 1%;
+    font-size: 3rem;
+}
 .show-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 25% 75%;
     box-shadow:0px 0px 5px 0px rgb(0, 0, 0);
     border-radius: 5px;
     background-color: honeydew;
@@ -98,7 +111,7 @@ footer{
         font-size: 70%;
     }
     #shows{
-        display: grid;
+        display: none;
         grid-template-columns: 47.5% 47.5%;
 
     }
@@ -108,7 +121,7 @@ footer{
         font-size: 75%;
     }
     #shows{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(3,30%);
 
     }
@@ -118,7 +131,7 @@ footer{
         font-size: 80%;
     }
     #shows{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(3,30%);
 
     }
@@ -128,7 +141,7 @@ footer{
         font-size: 85%;
     }
     #shows{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(4,21%);
 
     }
